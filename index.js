@@ -3,8 +3,8 @@ const { ApolloGateway } = require("@apollo/gateway");
 
 const gateway = new ApolloGateway({
     serviceList: [
-        { name: 'country', url: 'http://host.docker.internal:8080/query' },
-        { name: 'language', url: 'http://host.docker.internal:4000/query' },
+        { name: 'country', url: 'http://countries:8080/query' },
+        { name: 'language', url: 'http://languages:4000/query' },
     ],
 });
 
